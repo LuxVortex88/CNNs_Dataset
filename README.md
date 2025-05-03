@@ -38,5 +38,9 @@ In addition, the model predicts the class of the first image in the test set and
 📂 How to Run
 pip install tensorflow matplotlib
 python cnn_cifar10.py
+
+
+
+
 📜 License
 This project is open-source and free to use for learning and experimentation.
