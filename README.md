@@ -36,6 +36,7 @@ The model is evaluated on the test set, and the accuracy is printed.
 In addition, the model predicts the class of the first image in the test set and visualizes the result using matplotlib.
 
 📂 How to Run
+
 pip install tensorflow matplotlib
 python cnn_cifar10.py
 
