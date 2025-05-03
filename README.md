@@ -23,25 +23,13 @@ The CNN model is composed of:
 1 Output layer with 10 units (for classification)
 
 
-model = models.Sequential([
-    layers.Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3)),
-    layers.MaxPooling2D((2, 2)),
-    layers.Conv2D(64, (3, 3), activation='relu'),
-    layers.MaxPooling2D((2, 2)),
-    layers.Conv2D(64, (3, 3), activation='relu'),
-    layers.Flatten(),
-    layers.Dense(64, activation='relu'),
-    layers.Dense(10)
-])
+
 🧠 Training
 Optimizer: Adam
 
 Loss Function: SparseCategoricalCrossentropy
 
-Epochs: 10
-model.compile(optimizer='adam',
-              loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
-              metrics=['accuracy'])
+
 🎯 Results
 The model is evaluated on the test set, and the accuracy is printed.
 
